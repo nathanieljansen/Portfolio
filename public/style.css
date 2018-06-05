@@ -1,3 +1,7 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 .brand-logo img {
   height: 56px;
   margin-left: 10px;
@@ -7,14 +11,24 @@
   margin-right: 10px;
 }
 
-.nav-wrapper{
+.nav-wrapper {
   background: white !important;
 }
 
-a{
+a {
   color: gray !important;
 }
 
-.intro{
+.intro {
   background: gray;
+  color: white;
+}
+
+.name {
+  margin-top: 20px;
+  font-size: 35px;
+}
+
+.introduction {
+  font-size: 20px;
 }
