@@ -29,9 +29,15 @@ $(document).ready(function () {
     });
   }
   $('.getToKnow').on('click', () => {
-
     $("html, body").animate({
       scrollTop: $('.name').offset().top - 100
+    }, 1000);
+
+  })
+
+  $('.seeWork').on('click', () => {
+    $("html, body").animate({
+      scrollTop: $('.pastProjects').offset().top - 100
     }, 1000);
 
   })
