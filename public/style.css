@@ -32,3 +32,55 @@ a {
 .introduction {
   font-size: 20px;
 }
+
+.frontend {
+  height: 60%;
+  width: 60%;
+  margin-top: 40px;
+}
+
+.backend {
+  height: 40%;
+  width: 40%;
+}
+
+.startImage {
+  height: 350px;
+}
+
+.frontendHeader, .backendHeader {
+  background: white;
+  margin-top: -20px;
+  border-bottom: 100px solid;
+  border: solid gray;
+  border-bottom: 0px;
+  font-size: 35px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.contactForm{
+  margin-top: 100px;
+}
+
+.flipInX {
+  -webkit-animation: flipInX 7s;
+  /* Safari 4+ */
+  -moz-animation: flipInX 7s;
+  /* Fx 5+ */
+  -o-animation: flipInX 7s;
+  /* Opera 12+ */
+  animation: flipInX 7s;
+  /* IE 10+, Fx 29+ */
+}
+
+.rollIn {
+  -webkit-animation: rollIn 2s;
+  /* Safari 4+ */
+  -moz-animation: rollIn 2s;
+  /* Fx 5+ */
+  -o-animation: rollIn 2s;
+  /* Opera 12+ */
+  animation: rollIn 2s;
+  /* IE 10+, Fx 29+ */
+}
