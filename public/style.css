@@ -37,7 +37,7 @@ a {
 .frontend {
   height: 60%;
   width: 60%;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .backend {
@@ -51,14 +51,23 @@ a {
 
 .frontendHeader, .backendHeader {
   background: white;
-  margin-top: -20px;
-  border-bottom: 100px solid;
-  border: solid gray;
-  border-bottom: 0px;
+  /* margin-top: -20px; */
+  /* border: solid gray;
+  border-bottom: 0px; */
   font-size: 20px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
 }
+
+.pastProjects{
+  background: gray;
+}
+
+.pastProjectsHeader {
+  color: white;
+  font-size: 25px;
+}
+
 
 .contactForm{
   margin-top: 100px;
@@ -84,4 +93,10 @@ a {
   /* Opera 12+ */
   animation: rollIn 2s;
   /* IE 10+, Fx 29+ */
+}
+
+.card-image {
+  height: 200px;
+  /* Your height here */
+  overflow: hidden;
 }
