@@ -43,24 +43,21 @@ $(document).ready(function () {
   })
 
 
-  $('.sendMessage').click(() => {
-    event.preventDefault();
-    const name = $('#name').val();
-    const email = $('#email').val();
-    const comments = $('#textarea1').val();
+  $(".ajaxForm").submit(function (e) {
+    e.preventDefault();
+    var href = $(this).attr("action");
     $.ajax({
-      url: 'https://formspree.io/nathanieljansen@gmail.com',
-      method: 'POST',
-      data: {
-        name: name,
-        _replyto: email,
-        comments: comments,
-        _subject: 'Nathaniel Jansen Form Submission',
-      },
+      type: "POST",
       dataType: "json",
-      success: function () {
-        $("form").trigger("reset");
+      url: href,
+      data: $(this).serialize(),
+      success: function (response) {
+        if (response.status == "success") {
+          alert("We received your submission, thank you!");
+        } else {
+          alert("An error occured: " + response.message);
+        }
       }
     });
-  })
+  });
 })
