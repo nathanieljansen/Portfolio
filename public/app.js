@@ -43,7 +43,7 @@ $(document).ready(function () {
   })
 
 
-  $('.sendMessage').on('click touchend touchstart touchcancel', () => {
+  $('.sendMessage').click(() => {
     event.preventDefault();
     const name = $('#name').val();
     const email = $('#email').val();
