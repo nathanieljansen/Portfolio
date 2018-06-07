@@ -43,18 +43,11 @@ $(document).ready(function () {
   })
 
 
-  $('.sendMessage').on('click touchend', () => {
+  $('.sendMessage').on('click touchend touchstart touchcancel', () => {
     event.preventDefault();
-
-    //get the name field value
     const name = $('#name').val();
-    //get the name field value
     const email = $('#email').val();
-    //get the comments
     const comments = $('#textarea1').val();
-
-
-    //send to formspree
     $.ajax({
       url: 'https://formspree.io/nathanieljansen@gmail.com',
       method: 'POST',
