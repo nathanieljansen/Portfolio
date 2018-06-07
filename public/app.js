@@ -43,8 +43,8 @@ $(document).ready(function () {
   })
 
 
-  $('.sendMessage').on('click touchstart', function (e) {
-    e.preventDefault();
+  $('.sendMessage').on('click touchstart',() => {
+    event.preventDefault();
 
     //get the name field value
     const name = $('#name').val();
