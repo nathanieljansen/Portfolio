@@ -43,7 +43,7 @@ $(document).ready(function () {
   })
 
 
-  $('.sendMessage').on('click', () => {
+  $('.sendMessage').on('click touchend', () => {
     event.preventDefault();
 
     //get the name field value
