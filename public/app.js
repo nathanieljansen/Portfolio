@@ -43,7 +43,7 @@ $(document).ready(function () {
   })
 
 
-  $('.contactForm').on('submit touchstart', function (e) {
+  $('.sendMessage').on('click touchstart', function (e) {
     e.preventDefault();
 
     //get the name field value
