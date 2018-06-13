@@ -59,7 +59,7 @@ a {
   border-top-right-radius: 10px; */
 }
 
-.pastProjects{
+.pastProjects {
   background: gray;
 }
 
@@ -68,8 +68,7 @@ a {
   font-size: 25px;
 }
 
-
-.contactForm{
+.contactForm {
   margin-top: 100px;
 }
 
@@ -99,4 +98,44 @@ a {
   height: 200px;
   /* Your height here */
   overflow: hidden;
+}
+
+.page-footer {
+  background: #8D302C;
+}
+
+.sendMessage {
+  background: gray;
+}
+
+input {
+  border-bottom: 1px solid #8D302C !important;
+  -webkit-box-shadow: 0 1px 0 0 #8D302C !important;
+  box-shadow: 0 1px 0 0 #8D302C !important;
+}
+
+textarea {
+  border-bottom: 1px solid #8D302C !important;
+  -webkit-box-shadow: 0 1px 0 0 #8D302C !important;
+  box-shadow: 0 1px 0 0 #8D302C !important;
+}
+
+.ajaxForm {
+  margin-top: 50px;
+}
+
+label {
+  color: black !important;
+}
+
+@-webkit-keyframes autofill {
+  to {
+    color: #666;
+    background: transparent;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
 }
